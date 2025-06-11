@@ -1,0 +1,145 @@
+/* frontend/src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: #f9fafb;
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+input[type="file"] {
+  background: #ffffff;
+  color: #1e293b;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  background-color: #facc15;
+  color: #1e293b;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #fde68a;
+  transform: scale(1.05);
+}
+
+.result-box {
+  background: rgba(255, 255, 255, 0.12);
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;
+}
+
+.result-box h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.result-box pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #f1f5f9;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .App {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  input[type="file"] {
+    max-width: 100%;
+  }
+
+  .result-box {
+    padding: 1rem;
+  }
+}
+
+/* === Dark Mode === */
+
+.App.dark {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.App.dark form {
+  background: #1e293b;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.App.dark .result-box {
+  background: #1e293b;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.App.dark pre {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
